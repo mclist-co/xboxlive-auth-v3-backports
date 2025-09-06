@@ -1,3 +1,9 @@
+# v3 Backports only
+
+‼️ This package contains fixes for the v3-deprecated code. Please consider using the latest version of the [@xboxreplay/xboxlive-auth](https://www.npmjs.com/package/@xboxreplay/xboxlive-auth) package instead.
+
+**Original README below:**
+
 # Xbox Live - Auth
 
 Simple Xbox Live authentication module.

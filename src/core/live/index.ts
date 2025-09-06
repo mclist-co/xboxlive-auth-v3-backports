@@ -51,8 +51,8 @@ export const preAuth = (): Promise<PreAuthResponse> =>
 
 			// prettier-ignore
 			const matches: PreAuthMatchesParameters = {
-				PPFT: _getMatchForIndex(body, /sFTTag:'.*value=\"(.*)\"\/>'/, 1),
-				urlPost: _getMatchForIndex(body, /urlPost:'(.+?(?=\'))/, 1)
+				PPFT: _getMatchForIndex(body, /PPFT\\".* value=\\"(.*)\\"\/>/, 1),
+				urlPost: _getMatchForIndex(body, /urlPost":"(.+?(?=\"))/, 1),
 			};
 
 			if (matches.PPFT === void 0)
